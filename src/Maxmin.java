@@ -1,32 +1,19 @@
+import java.util.*;
 public class Maxmin {
     public static  void main(String args[])
     {
-        int[] arr = {1,4,17,7,25,3,100};
+        Integer[] arr = {1,4,17,7,25,3,100};
+        int k = 2;
         System.out.println("original array");
-        System.out.println(arr);
-        System.out.println("the smallest elament is");
-        min(arr);
-        System.out.println("the largest element is");
-        max(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println("the smallest element of a array is");
+        Arrays.sort(arr);
+        System.out.println(arr[k -1]);
+        System.out.println("the largest element of a array is");
+        Arrays.sort(arr, Collections.reverseOrder());
+        System.out.println(arr[k - 1]);
+    }
 
-    }
-    private static void min(int[] arr)
-    {
-        int[] min = new int[arr.length];
-        for(int i =0;i < arr.length;i++)
-        {
-            min(arr);
-        }
-
-    }
-    private static void max(int[] arr)
-    {
-        int[] max = new int[arr.length];
-        for(int i=0;i < arr.length;i++)
-        {
-            max(arr);
-        }
-    }
 }
 
 
